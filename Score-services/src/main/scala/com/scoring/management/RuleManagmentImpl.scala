@@ -1,6 +1,7 @@
 package com.scoring.management
 
 import java.util.UUID
+import java.lang.NoSuchMethodException
 import scala.collection.JavaConversions
 import scala.collection.JavaConversions.asScalaBuffer
 import org.joda.time.DateTime
@@ -31,13 +32,19 @@ class RuleManagmentImpl(dao: AbstractDao, config: ScoreConfiguration) extends Ru
    */
   override def getFinalScore(reqDto: ScoreRequestDto): ScoreResponseDto = {
     if (Minutes.minutesBetween(lastRefresh, DateTime.now).getMinutes > config.refreshFreqInMinutes) ruleMap = reloadRulesResources(dao, ruleMap)
-    var scoreList: List[Int] = List[Int]()
+    var scoreList: List[Double] = List[Double]()
     ruleMap.values.foreach { rule =>
       {
-        val id = classOf[ScoreRequestDto].getMethod(rule.appliesOn).invoke(reqDto).asInstanceOf[Int]
-        rule.enableFlag && rule.ruleResource.contains(id) match {
-          case true  => scoreList = rule.score :: scoreList
-          case false => scoreList = 0 :: scoreList
+        try {
+          val id = classOf[ScoreRequestDto].getMethod(rule.appliesOn).invoke(reqDto).asInstanceOf[Int]
+          rule.enableFlag && rule.ruleResource.contains(id) match {
+            case true  => scoreList = rule.score :: scoreList
+            case false => scoreList = 0 :: scoreList
+          }
+        } catch {
+          case e:  NoSuchMethodException =>
+            println("Error: Rule " + rule.ruleId + " applies on " + rule.appliesOn + ". this field doesn't exists in request")
+            scoreList = 0 :: scoreList
         }
       }
     }
@@ -48,7 +55,7 @@ class RuleManagmentImpl(dao: AbstractDao, config: ScoreConfiguration) extends Ru
    * This function updated the score in the rule for a given ruleId.
    *
    */
-  override def updateRuleScore(ruleId: String, newScore: Int): Option[RuleDto] = {
+  override def updateRuleScore(ruleId: String, newScore: Double): Option[RuleDto] = {
     ruleMap get ruleId match {
       case None       => None
       case Some(rule) => ruleMap = ruleMap + (ruleId -> rule.copy(score = newScore)); Some(ruleMap(ruleId))
@@ -78,7 +85,7 @@ class RuleManagmentImpl(dao: AbstractDao, config: ScoreConfiguration) extends Ru
    *
    *
    */
-  def reloadRulesResources(dao: AbstractDao, rulesMap: Map[String, RuleDto]) = {
+  private [this] def reloadRulesResources(dao: AbstractDao, rulesMap: Map[String, RuleDto]) = {
     println("Reloading rules resource. Time : " + DateTime.now())
     val reloadRule = loadRuleResource(dao) _
     rulesMap map {
@@ -93,7 +100,7 @@ class RuleManagmentImpl(dao: AbstractDao, config: ScoreConfiguration) extends Ru
 
   /**
    * This function is responsible for initializing the rules list.
-   * To add a rule initilize the new rule in this function and add the new rule to last Map.
+   * To add a rule initialize the new rule in this function and add the new rule to the Map.
    *
    */
   private[this] def initializeRulesMap(dao: AbstractDao, config: ScoreConfiguration) = {
@@ -122,7 +129,7 @@ class RuleManagmentImpl(dao: AbstractDao, config: ScoreConfiguration) extends Ru
    *
    *
    */
-  def loadRuleResource(dao: AbstractDao)(rule: RuleDto): Either[RuleDto, RuleDto] = {
+  private [this] def loadRuleResource(dao: AbstractDao)(rule: RuleDto): Either[RuleDto, RuleDto] = {
     try {
       Right(rule.copy(ruleResource = dao.getList(rule.resourceName).toList.map { jInt => jInt.toInt }))
     } catch {

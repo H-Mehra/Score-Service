@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuite 
-errors="0" failures="0" hostname="localhost" name="com.scoring.test.ScoreTests" tests="4" time="1.202" timestamp="2017-02-11T07:52:23">
+errors="0" failures="0" hostname="localhost" name="com.scoring.test.ScoreTests" tests="10" time="1.285" timestamp="2017-02-11T22:52:47">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment">
     </property>
@@ -92,16 +92,37 @@ errors="0" failures="0" hostname="localhost" name="com.scoring.test.ScoreTests" 
     <property name="sun.cpu.isalist" value=""> </property>
   </properties>
   <testcase 
-  name="JDBI should be able to establish a connection with database" classname="com.scoring.test.ScoreTests" time="0.968">
+  name="JDBI should Be able to establish a connection with database" classname="com.scoring.test.ScoreTests" time="0.971">
 </testcase>
   <testcase 
-  name="DBI factory should be able to instantiate MariaDao class" classname="com.scoring.test.ScoreTests" time="0.092">
+  name="DBI factory should Be able to instantiate MariaDao class" classname="com.scoring.test.ScoreTests" time="0.088">
 </testcase>
   <testcase 
-  name="Dao should be able to query the database and return the expected results" classname="com.scoring.test.ScoreTests" time="0.097">
+  name="Dao should Be able to query the database and return the expected results" classname="com.scoring.test.ScoreTests" time="0.122">
 </testcase>
   <testcase 
-  name="hotelList and countryList should be available in database" classname="com.scoring.test.ScoreTests" time="0.005">
+  name="hotelList and countryList should Be available in test database" classname="com.scoring.test.ScoreTests" time="0.006">
+</testcase>
+  <testcase 
+  name="Rule Management instance should Be able to function independently and perform score operations" classname="com.scoring.test.ScoreTests" time="0.047">
+</testcase>
+  <testcase 
+  name="Rule Management instance should Return score 5.0 for hotelId=23537&amp;countryId=24253 pair as both 
+  ids exists in the testlists and hotelrule-countryrule score are 5.0, 3.0 respectively" classname="com.scoring.test.ScoreTests" time="0.011">
+</testcase>
+  <testcase 
+  name="Rule Management instance should Return score 0.0 for hotelId=2357&amp;countryId=2425 pair as both ids are not present in the test lists." classname="com.scoring.test.ScoreTests" time="0.001">
+</testcase>
+  <testcase 
+  name="Rule Management instance should Return score 3.0 for hotelId=2357&amp;countryId=24253 pair as hotelId 
+  doesn't exists in test hotelList and hotelrule-countryrule score are 5.0, 3.0 respectively" classname="com.scoring.test.ScoreTests" time="0.0">
+</testcase>
+  <testcase 
+  name="Rule Management instance should Return score 8.0 for hotelId=23537&amp;countryId=24253, if we update 
+  the countryRule score from 3.0 to 8.0, as both ids exists in the testlists" classname="com.scoring.test.ScoreTests" time="0.001">
+</testcase>
+  <testcase 
+  name="Rule Management instance should Return 5.0 for hotelId=23537&amp;countryId=24253 if we disable the cuntryRule, as both ids exists in the testlists" classname="com.scoring.test.ScoreTests" time="0.001">
 </testcase>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

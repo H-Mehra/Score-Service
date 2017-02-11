@@ -15,7 +15,7 @@ import com.scoring.dto.ScoreRequestDto
 @Path("/scoreService")
 @Produces(Array(MediaType.APPLICATION_JSON))
 class ScoringSevice(management: RuleManagment) {
-  
+
   @Path("")
   @GET
   @Produces(Array(MediaType.TEXT_PLAIN))
@@ -34,7 +34,7 @@ class ScoringSevice(management: RuleManagment) {
       |    ex. /scoreService/enableRule?ruleId=<ruleId>&enable=<true/false>
       |
       |  - To update the score of a rule send a request with two parameters ruleId & updatedScore on /scoreService/ruleScore
-      |    ex. /scoreService/ruleScore?ruleId=<ruleId>&updatedScore=<newScore>""" 
+      |    ex. /scoreService/ruleScore?ruleId=<ruleId>&updatedScore=<newScore>"""
     Response.ok(manual).build()
   }
 
@@ -53,8 +53,8 @@ class ScoringSevice(management: RuleManagment) {
   @GET //  @PUT
   def enableRule(@QueryParam("ruleId") ruleId: String, @QueryParam("enable") flag: Boolean): Response = {
     ruleId match {
-      case "0" => Response.ok(ErrorResponseDto(Status.PARTIAL_CONTENT.getStatusCode(), "ruleId must not be empty")).build()
-      case id if id != "0" => {
+      case null | "" => Response.ok(ErrorResponseDto(Status.PARTIAL_CONTENT.getStatusCode(), "ruleId must not be empty")).build()
+      case id   => {
         management.enableRule(id, flag) match {
           case None       => Response.ok(ErrorResponseDto(Status.NOT_FOUND.getStatusCode(), "Rule does not exist")).build()
           case Some(rule) => Response.ok(rule).build()
@@ -66,9 +66,10 @@ class ScoringSevice(management: RuleManagment) {
   @Path("/ruleScore")
   @GET //  @PUT
   def updateRuleScore(@QueryParam("ruleId") ruleId: String, @QueryParam("updatedScore") updatedScore: Int): Response = {
+    println(ruleId)
     ruleId match {
-      case "0" => Response.ok(ErrorResponseDto(Status.PARTIAL_CONTENT.getStatusCode(), "ruleId must not be empty")).build()
-      case id if id != "0" => {
+      case null | "" => Response.ok(ErrorResponseDto(Status.PARTIAL_CONTENT.getStatusCode(), "ruleId must not be empty")).build()
+      case id  => {
         management.updateRuleScore(ruleId, updatedScore) match {
           case None       => Response.ok(ErrorResponseDto(Status.NOT_FOUND.getStatusCode(), "Rule does not exist")).build()
           case Some(rule) => Response.ok(rule).build()
@@ -81,6 +82,6 @@ class ScoringSevice(management: RuleManagment) {
   @Path("/ruleDump")
   @GET
   def ruleDump(): Response = {
-    Response.ok(management.ruleDump()) /*.entity("Exisiting Rules in the system-")*/ .build()
+    Response.ok(management.ruleDump()).build()
   }
 }

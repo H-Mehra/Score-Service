@@ -7,7 +7,7 @@ import com.scoring.dto.ScoreRequestDto
 trait RuleManagment {
   def getFinalScore(reqDto: ScoreRequestDto): ScoreResponseDto
   
-  def updateRuleScore(ruleId: String, newScore: Int): Option[RuleDto]
+  def updateRuleScore(ruleId: String, newScore: Double): Option[RuleDto]
   
   def enableRule(ruleId: String, enable: Boolean): Option[RuleDto]
   
