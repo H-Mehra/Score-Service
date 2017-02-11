@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite 
+errors="0" failures="0" hostname="localhost" name="org.scalatest.tools.DiscoverySuite" tests="0" time="1.206" timestamp="2017-02-11T07:52:23">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment">
+    </property>
+    <property 
+    name="sun.boot.library.path" value="/usr/lib/jvm/oracle_jdk8/jre/lib/amd64">
+</property>
+    <property name="java.vm.version" value="25.65-b01"> </property>
+    <property name="java.vm.vendor" value="Oracle Corporation"> </property>
+    <property name="java.vendor.url" value="http://java.oracle.com/">
+    </property>
+    <property name="path.separator" value=":"> </property>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM">
+    </property>
+    <property name="file.encoding.pkg" value="sun.io"> </property>
+    <property name="user.country" value="IN"> </property>
+    <property name="sun.java.launcher" value="SUN_STANDARD"> </property>
+    <property name="sun.os.patch.level" value="unknown"> </property>
+    <property 
+    name="java.vm.specification.name" value="Java Virtual Machine Specification">
+</property>
+    <property 
+    name="user.dir" value="/home/himanshu/eclipse/workspace/Score-services">
+</property>
+    <property name="java.runtime.version" value="1.8.0_65-b17"> </property>
+    <property 
+    name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment">
+</property>
+    <property 
+    name="basedir" value="/home/himanshu/eclipse/workspace/Score-services">
+</property>
+    <property 
+    name="java.endorsed.dirs" value="/usr/lib/jvm/oracle_jdk8/jre/lib/endorsed">
+</property>
+    <property name="os.arch" value="amd64"> </property>
+    <property name="java.io.tmpdir" value="/tmp"> </property>
+    <property name="line.separator" value=" "> </property>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation">
+    </property>
+    <property name="os.name" value="Linux"> </property>
+    <property name="sun.jnu.encoding" value="UTF-8"> </property>
+    <property 
+    name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib">
+</property>
+    <property 
+    name="java.specification.name" value="Java Platform API Specification">
+</property>
+    <property name="java.class.version" value="52.0"> </property>
+    <property 
+    name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers">
+</property>
+    <property name="os.version" value="3.13.0-36-generic"> </property>
+    <property name="user.home" value="/home/himanshu"> </property>
+    <property name="user.timezone" value=""> </property>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob">
+    </property>
+    <property name="file.encoding" value="UTF-8"> </property>
+    <property name="java.specification.version" value="1.8"> </property>
+    <property name="user.name" value="himanshu"> </property>
+    <property 
+    name="java.class.path" value="/home/himanshu/eclipse/workspace/Score-services/target/test-classes:/home/himanshu/eclipse/workspace/Score-services/target/classes:/home/himanshu/.m2/repository/org/scala-lang/scala-library/2.10.6/scala-library-2.10.6.jar:/home/himanshu/.m2/repository/com/datasift/dropwizard/scala/dropwizard-scala-core_2.10/1.0.0-1/dropwizard-scala-core_2.10-1.0.0-1.jar:/home/himanshu/.m2/repository/com/datasift/dropwizard/scala/dropwizard-scala-jersey_2.10/1.0.0-1/dropwizard-scala-jersey_2.10-1.0.0-1.jar:/home/himanshu/.m2/repository/io/dropwizard/dropwizard-jersey/1.0.0/dropwizard-jersey-1.0.0.jar:/home/himanshu/.m2/repository/org/glassfish/jersey/core/jersey-server/2.23.1/jersey-server-2.23.1.jar:/home/himanshu/.m2/repository/org/glassfish/jersey/core/jersey-common/2.23.1/jersey-common-2.23.1.jar:/home/himanshu/.m2/repository/org/glassfish/jersey/bundles/repackaged/jersey-guava/2.23.1/jersey-guava-2.23.1.jar:/home/himanshu/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.1/osgi-resource-locator-1.0.1.jar:/home/himanshu/.m2/repository/org/glassfish/jersey/core/jersey-client/2.23.1/jersey-client-2.23.1.jar:/home/himanshu/.m2/repository/javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1.jar:/home/himanshu/.m2/repository/org/glassfish/jersey/media/jersey-media-jaxb/2.23.1/jersey-media-jaxb-2.23.1.jar:/home/himanshu/.m2/repository/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2.jar:/home/himanshu/.m2/repository/org/glassfish/hk2/hk2-api/2.4.0-b34/hk2-api-2.4.0-b34.jar:/home/himanshu/.m2/repository/org/glassfish/hk2/hk2-utils/2.4.0-b34/hk2-utils-2.4.0-b34.jar:/home/himanshu/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.4.0-b34/aopalliance-repackaged-2.4.0-b34.jar:/home/himanshu/.m2/repository/org/glassfish/hk2/external/javax.inject/2.4.0-b34/javax.inject-2.4.0-b34.jar:/home/himanshu/.m2/repository/org/glassfish/hk2/hk2-locator/2.4.0-b34/hk2-locator-2.4.0-b34.jar:/home/himanshu/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar:/home/himanshu/.m2/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar:/home/himanshu/.m2/repository/org/glassfish/jersey/ext/jersey-metainf-services/2.23.1/jersey-metainf-services-2.23.1.jar:/home/himanshu/.m2/repository/org/glassfish/jersey/ext/jersey-bean-validation/2.23.1/jersey-bean-validation-2.23.1.jar:/home/himanshu/.m2/repository/io/dropwizard/metrics/metrics-jersey2/3.1.2/metrics-jersey2-3.1.2.jar:/home/himanshu/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-json-provider/2.7.6/jackson-jaxrs-json-provider-2.7.6.jar:/home/himanshu/.m2/repository/com/fasterxml/jackson/jaxrs/jackson-jaxrs-base/2.7.6/jackson-jaxrs-base-2.7.6.jar:/home/himanshu/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.7.6/jackson-module-jaxb-annotations-2.7.6.jar:/home/himanshu/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet/2.23.1/jersey-container-servlet-2.23.1.jar:/home/himanshu/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet-core/2.23.1/jersey-container-servlet-core-2.23.1.jar:/home/himanshu/.m2/repository/org/eclipse/jetty/jetty-server/9.3.9.v20160517/jetty-server-9.3.9.v20160517.jar:/home/himanshu/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/home/himanshu/.m2/repository/org/eclipse/jetty/jetty-io/9.3.9.v20160517/jetty-io-9.3.9.v20160517.jar:/home/himanshu/.m2/repository/org/eclipse/jetty/jetty-webapp/9.3.9.v20160517/jetty-webapp-9.3.9.v20160517.jar:/home/himanshu/.m2/repository/org/eclipse/jetty/jetty-xml/9.3.9.v20160517/jetty-xml-9.3.9.v20160517.jar:/home/himanshu/.m2/repository/org/eclipse/jetty/jetty-continuation/9.3.9.v20160517/jetty-continuation-9.3.9.v20160517.jar:/home/himanshu/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar:/home/himanshu/.m2/repository/com/datasift/dropwizard/scala/dropwizard-scala-validation_2.10/1.0.0-1/dropwizard-scala-validation_2.10-1.0.0-1.jar:/home/himanshu/.m2/repository/io/dropwizard/dropwizard-validation/1.0.0/dropwizard-validation-1.0.0.jar:/home/himanshu/.m2/repository/org/hibernate/hibernate-validator/5.2.4.Final/hibernate-validator-5.2.4.Final.jar:/home/himanshu/.m2/repository/org/jboss/logging/jboss-logging/3.2.1.Final/jboss-logging-3.2.1.Final.jar:/home/himanshu/.m2/repository/com/fasterxml/classmate/1.1.0/classmate-1.1.0.jar:/home/himanshu/.m2/repository/org/glassfish/javax.el/3.0.0/javax.el-3.0.0.jar:/home/himanshu/.m2/repository/com/datasift/dropwizard/scala/dropwizard-scala-metrics_2.10/1.0.0-1/dropwizard-scala-metrics_2.10-1.0.0-1.jar:/home/himanshu/.m2/repository/org/log4s/log4s_2.10/1.3.0/log4s_2.10-1.3.0.jar:/home/himanshu/.m2/repository/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar:/home/himanshu/.m2/repository/io/dropwizard/dropwizard-core/1.0.0/dropwizard-core-1.0.0.jar:/home/himanshu/.m2/repository/io/dropwizard/dropwizard-util/1.0.0/dropwizard-util-1.0.0.jar:/home/himanshu/.m2/repository/com/google/guava/guava/19.0/guava-19.0.jar:/home/himanshu/.m2/repository/com/google/code/findbugs/jsr305/3.0.1/jsr305-3.0.1.jar:/home/himanshu/.m2/repository/joda-time/joda-time/2.9.4/joda-time-2.9.4.jar:/home/himanshu/.m2/repository/io/dropwizard/dropwizard-jackson/1.0.0/dropwizard-jackson-1.0.0.jar:/home/himanshu/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-guava/2.7.6/jackson-datatype-guava-2.7.6.jar:/home/himanshu/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.7.6/jackson-datatype-jsr310-2.7.6.jar:/home/himanshu/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.7.6/jackson-datatype-jdk8-2.7.6.jar:/home/himanshu/.m2/repository/com/fasterxml/jackson/module/jackson-module-afterburner/2.7.6/jackson-module-afterburner-2.7.6.jar:/home/himanshu/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-joda/2.7.6/jackson-datatype-joda-2.7.6.jar:/home/himanshu/.m2/repository/ch/qos/logback/logback-classic/1.1.7/logback-classic-1.1.7.jar:/home/himanshu/.m2/repository/io/dropwizard/dropwizard-configuration/1.0.0/dropwizard-configuration-1.0.0.jar:/home/himanshu/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.7.6/jackson-dataformat-yaml-2.7.6.jar:/home/himanshu/.m2/repository/org/yaml/snakeyaml/1.15/snakeyaml-1.15.jar:/home/himanshu/.m2/repository/io/dropwizard/dropwizard-logging/1.0.0/dropwizard-logging-1.0.0.jar:/home/himanshu/.m2/repository/io/dropwizard/metrics/metrics-logback/3.1.2/metrics-logback-3.1.2.jar:/home/himanshu/.m2/repository/org/slf4j/jul-to-slf4j/1.7.21/jul-to-slf4j-1.7.21.jar:/home/himanshu/.m2/repository/ch/qos/logback/logback-core/1.1.7/logback-core-1.1.7.jar:/home/himanshu/.m2/repository/org/slf4j/log4j-over-slf4j/1.7.21/log4j-over-slf4j-1.7.21.jar:/home/himanshu/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.21/jcl-over-slf4j-1.7.21.jar:/home/himanshu/.m2/repository/org/eclipse/jetty/jetty-util/9.3.9.v20160517/jetty-util-9.3.9.v20160517.jar:/home/himanshu/.m2/repository/io/dropwizard/dropwizard-metrics/1.0.0/dropwizard-metrics-1.0.0.jar:/home/himanshu/.m2/repository/io/dropwizard/dropwizard-servlets/1.0.0/dropwizard-servlets-1.0.0.jar:/home/himanshu/.m2/repository/io/dropwizard/metrics/metrics-annotation/3.1.2/metrics-annotation-3.1.2.jar:/home/himanshu/.m2/repository/io/dropwizard/dropwizard-jetty/1.0.0/dropwizard-jetty-1.0.0.jar:/home/himanshu/.m2/repository/io/dropwizard/metrics/metrics-jetty9/3.1.2/metrics-jetty9-3.1.2.jar:/home/himanshu/.m2/repository/org/eclipse/jetty/jetty-servlet/9.3.9.v20160517/jetty-servlet-9.3.9.v20160517.jar:/home/himanshu/.m2/repository/org/eclipse/jetty/jetty-security/9.3.9.v20160517/jetty-security-9.3.9.v20160517.jar:/home/himanshu/.m2/repository/org/eclipse/jetty/jetty-servlets/9.3.9.v20160517/jetty-servlets-9.3.9.v20160517.jar:/home/himanshu/.m2/repository/org/eclipse/jetty/jetty-http/9.3.9.v20160517/jetty-http-9.3.9.v20160517.jar:/home/himanshu/.m2/repository/io/dropwizard/dropwizard-lifecycle/1.0.0/dropwizard-lifecycle-1.0.0.jar:/home/himanshu/.m2/repository/io/dropwizard/metrics/metrics-core/3.1.2/metrics-core-3.1.2.jar:/home/himanshu/.m2/repository/io/dropwizard/metrics/metrics-jvm/3.1.2/metrics-jvm-3.1.2.jar:/home/himanshu/.m2/repository/io/dropwizard/metrics/metrics-servlets/3.1.2/metrics-servlets-3.1.2.jar:/home/himanshu/.m2/repository/io/dropwizard/metrics/metrics-json/3.1.2/metrics-json-3.1.2.jar:/home/himanshu/.m2/repository/io/dropwizard/metrics/metrics-healthchecks/3.1.2/metrics-healthchecks-3.1.2.jar:/home/himanshu/.m2/repository/io/dropwizard/dropwizard-request-logging/1.0.0/dropwizard-request-logging-1.0.0.jar:/home/himanshu/.m2/repository/ch/qos/logback/logback-access/1.1.7/logback-access-1.1.7.jar:/home/himanshu/.m2/repository/net/sourceforge/argparse4j/argparse4j/0.7.0/argparse4j-0.7.0.jar:/home/himanshu/.m2/repository/org/eclipse/jetty/toolchain/setuid/jetty-setuid-java/1.0.3/jetty-setuid-java-1.0.3.jar:/home/himanshu/.m2/repository/com/fasterxml/jackson/module/jackson-module-scala_2.10/2.7.5/jackson-module-scala_2.10-2.7.5.jar:/home/himanshu/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.7.5/jackson-core-2.7.5.jar:/home/himanshu/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.7.5/jackson-annotations-2.7.5.jar:/home/himanshu/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.7.5/jackson-databind-2.7.5.jar:/home/himanshu/.m2/repository/com/fasterxml/jackson/module/jackson-module-paranamer/2.7.5/jackson-module-paranamer-2.7.5.jar:/home/himanshu/.m2/repository/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.jar:/home/himanshu/.m2/repository/com/datasift/dropwizard/scala/dropwizard-scala-jdbi_2.10/1.0.0-1/dropwizard-scala-jdbi_2.10-1.0.0-1.jar:/home/himanshu/.m2/repository/io/dropwizard/dropwizard-jdbi/1.0.0/dropwizard-jdbi-1.0.0.jar:/home/himanshu/.m2/repository/io/dropwizard/dropwizard-db/1.0.0/dropwizard-db-1.0.0.jar:/home/himanshu/.m2/repository/org/apache/tomcat/tomcat-jdbc/8.5.3/tomcat-jdbc-8.5.3.jar:/home/himanshu/.m2/repository/org/apache/tomcat/tomcat-juli/8.5.3/tomcat-juli-8.5.3.jar:/home/himanshu/.m2/repository/org/jdbi/jdbi/2.73/jdbi-2.73.jar:/home/himanshu/.m2/repository/io/dropwizard/metrics/metrics-jdbi/3.1.2/metrics-jdbi-3.1.2.jar:/home/himanshu/.m2/repository/mysql/mysql-connector-java/5.1.6/mysql-connector-java-5.1.6.jar:/home/himanshu/.m2/repository/org/antlr/stringtemplate/3.2.1/stringtemplate-3.2.1.jar:/home/himanshu/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/himanshu/.m2/repository/org/scalatest/scalatest_2.10/3.0.1/scalatest_2.10-3.0.1.jar:/home/himanshu/.m2/repository/org/scalactic/scalactic_2.10/3.0.1/scalactic_2.10-3.0.1.jar:/home/himanshu/.m2/repository/org/scala-lang/scala-reflect/2.10.6/scala-reflect-2.10.6.jar">
+</property>
+    <property name="java.vm.specification.version" value="1.8"> </property>
+    <property name="sun.arch.data.model" value="64"> </property>
+    <property name="java.home" value="/usr/lib/jvm/oracle_jdk8/jre">
+    </property>
+    <property 
+    name="sun.java.command" value="org.scalatest.tools.Runner -R /home/himanshu/eclipse/workspace/Score-services/target/classes /home/himanshu/eclipse/workspace/Score-services/target/test-classes -o -fWDF /home/himanshu/eclipse/workspace/Score-services/target/surefire-reports/TestSuite.txt -u /home/himanshu/eclipse/workspace/Score-services/target/surefire-reports/.">
+</property>
+    <property name="java.specification.vendor" value="Oracle Corporation">
+    </property>
+    <property name="user.language" value="en"> </property>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"> </property>
+    <property name="java.vm.info" value="mixed mode"> </property>
+    <property name="java.version" value="1.8.0_65"> </property>
+    <property 
+    name="java.ext.dirs" value="/usr/lib/jvm/oracle_jdk8/jre/lib/ext:/usr/java/packages/lib/ext">
+</property>
+    <property 
+    name="sun.boot.class.path" value="/usr/lib/jvm/oracle_jdk8/jre/lib/resources.jar:/usr/lib/jvm/oracle_jdk8/jre/lib/rt.jar:/usr/lib/jvm/oracle_jdk8/jre/lib/sunrsasign.jar:/usr/lib/jvm/oracle_jdk8/jre/lib/jsse.jar:/usr/lib/jvm/oracle_jdk8/jre/lib/jce.jar:/usr/lib/jvm/oracle_jdk8/jre/lib/charsets.jar:/usr/lib/jvm/oracle_jdk8/jre/lib/jfr.jar:/usr/lib/jvm/oracle_jdk8/jre/classes">
+</property>
+    <property name="java.vendor" value="Oracle Corporation"> </property>
+    <property name="file.separator" value="/"> </property>
+    <property 
+    name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/">
+</property>
+    <property name="sun.cpu.endian" value="little"> </property>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"> </property>
+    <property name="sun.desktop" value="gnome"> </property>
+    <property name="sun.cpu.isalist" value=""> </property>
+  </properties>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

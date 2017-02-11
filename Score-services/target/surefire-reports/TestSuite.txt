@@ -1,0 +1,17 @@
+Discovery starting.
+Discovery completed in 246 milliseconds.
+Run starting. Expected test count is: 4
+ScoreTests:
+JDBI
+- should be able to establish a connection with database (965 milliseconds)
+DBI factory
+- should be able to instantiate MariaDao class (92 milliseconds)
+Dao
+- should be able to query the database and return the expected results (97 milliseconds)
+hotelList and countryList
+- should be available in database (6 milliseconds)
+Run completed in 1 second, 484 milliseconds.
+Total number of tests run: 4
+Suites: completed 2, aborted 0
+Tests: succeeded 4, failed 0, canceled 0, ignored 0, pending 0
+All tests passed.

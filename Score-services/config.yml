@@ -1,0 +1,19 @@
+dataSourceFactory:
+  driverClass: com.mysql.jdbc.Driver
+  user: root
+  password: root
+  url: jdbc:mysql://mysql.server:3306/agoda
+  properties:
+    charSet: UTF-8
+  maxWaitForConnection: 1s
+  minSize: 8
+  maxSize: 32
+  checkConnectionWhileIdle: false
+  evictionInterval: 10s
+  minIdleTime: 1 minute
+  checkConnectionOnBorrow: true
+  
+scoreConfiguration:
+  refreshFreqInMinutes: 2
+  HotelRUleDefaultScore: 5
+  CountryRuleDefaultScore: 3
