@@ -19,3 +19,4 @@ To compile : run `mvn clean test install` in the Score-Serice directory
 
 To run     : run `java -jar <jarFileOfScore-ServiceProject> server <config.yml_file>`
 
+Projects url : localhost:8080/scoreService/
