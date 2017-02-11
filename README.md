@@ -9,8 +9,8 @@ To run     : run `java -jar <jarFileOfScore-ServiceProject> server <config.yml_f
 To setup databse environment in Maria/MySql database : 
 export following variables
 
-export MYSQL_USER=<yourUserName>
-export MYSQL_PASSWD=<yourPassWord>
+export MYSQL_USER=\<yourUserName>
+export MYSQL_PASSWD=\<yourPassWord>
 
 To create database and tables:  run `bash setupScoreDatabase.sh`
 
