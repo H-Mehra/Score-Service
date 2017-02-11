@@ -2,7 +2,7 @@ dataSourceFactory:
   driverClass: com.mysql.jdbc.Driver
   user: root
   password: root
-  url: jdbc:mysql://mysql.server:3306/agoda
+  url: jdbc:mysql://mysql.server:3306/score
   properties:
     charSet: UTF-8
   maxWaitForConnection: 1s

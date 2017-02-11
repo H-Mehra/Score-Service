@@ -25,7 +25,7 @@ class ScoreTests extends FlatSpec with Matchers {
     val environment = new Environment("test-env", Jackson.newObjectMapper(), null, new MetricRegistry(), null)
     val dataSourceFactory = new DataSourceFactory();
     dataSourceFactory.setDriverClass("com.mysql.jdbc.Driver");
-    dataSourceFactory.setUrl("jdbc:mysql://mysql.server:3306/agoda");
+    dataSourceFactory.setUrl("jdbc:mysql://mysql.server:3306/score");
     dataSourceFactory.setUser("root");
     dataSourceFactory.setPassword("root");
     try {
